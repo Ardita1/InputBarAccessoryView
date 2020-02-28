@@ -63,7 +63,7 @@ open class InputBarAccessoryView: UIView {
     //Create an array with InputBarButtonItem
     open var allItems: [InputBarButtonItem] = []
     
-    //Create an array with InputBarButtonItem for reply
+    //Create an array with InputBarButtonItem for reply View
     open var allReplyItems: [InputBarButtonItem] = []
     
     //
