@@ -110,6 +110,8 @@ class CommonTableViewController: UIViewController, UITableViewDataSource, UITabl
 }
 
 extension CommonTableViewController: InputBarAccessoryViewDelegate {
+    func resetToInitialState() {
+    }
     
     // MARK: - InputBarAccessoryViewDelegate
     

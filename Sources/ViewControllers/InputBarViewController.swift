@@ -83,6 +83,8 @@ open class InputBarViewController: UIViewController, InputBarAccessoryViewDelega
 
     open func inputBar(_ inputBar: InputBarAccessoryView, didChangeIntrinsicContentTo size: CGSize) { }
 
+    open func resetToInitialState() {}
+    
     open func inputBar(_ inputBar: InputBarAccessoryView, didSwipeTextViewWith gesture: UISwipeGestureRecognizer) { }
 }
 
