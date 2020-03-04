@@ -80,13 +80,13 @@ open class AutocompleteCell: UITableViewCell {
         separatorLine.addConstraints(left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, heightConstant: 0.5)
     }
     
-    open override func layoutSubviews() {
-        super.layoutSubviews()
-        guard let imageViewFrame = imageView?.frame else { return }
-        let imageViewOrigin = CGPoint(x: imageViewFrame.origin.x + imageViewEdgeInsets.left, y: imageViewFrame.origin.y + imageViewEdgeInsets.top)
-        let imageViewSize = CGSize(width: imageViewFrame.size.width - imageViewEdgeInsets.left - imageViewEdgeInsets.right, height: imageViewFrame.size.height - imageViewEdgeInsets.top - imageViewEdgeInsets.bottom)
-        imageView?.frame = CGRect(origin: imageViewOrigin, size: imageViewSize)
-    }
+     open override func layoutSubviews() {
+         super.layoutSubviews()
+         guard let imageViewFrame = imageView?.frame else { return }
+         let imageViewOrigin = CGPoint(x: imageViewFrame.origin.x + imageViewEdgeInsets.left + 5, y: imageViewFrame.origin.y + imageViewEdgeInsets.top + 5)
+         let imageViewSize = CGSize(width: imageViewFrame.size.width - imageViewEdgeInsets.left - imageViewEdgeInsets.right - 5, height: imageViewFrame.size.height - imageViewEdgeInsets.top - imageViewEdgeInsets.bottom - 5)
+         imageView?.frame = CGRect(origin: imageViewOrigin, size: imageViewSize)
+     }
     
     // MARK: - API [Public]
     

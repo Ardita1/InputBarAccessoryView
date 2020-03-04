@@ -63,7 +63,7 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
         tableView.register(AutocompleteCell.self, forCellReuseIdentifier: AutocompleteCell.reuseIdentifier)
         tableView.separatorStyle = .none
         tableView.backgroundColor = .white
-        tableView.rowHeight = 44
+        tableView.rowHeight = 50
         tableView.delegate = self
         tableView.dataSource = self
         return tableView
@@ -366,7 +366,7 @@ open class AutocompleteManager: NSObject, InputPlugin, UITextViewDelegate, UITab
     }
     
     /// Invalidates the `currentSession` session if it existed
-    private func unregisterCurrentSession() {
+    open func unregisterCurrentSession() {
         
         guard let session = currentSession else { return }
         guard delegate?.autocompleteManager(self, shouldUnregister: session.prefix) != false else { return }

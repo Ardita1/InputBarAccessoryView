@@ -30,7 +30,7 @@ import UIKit
 open class AutocompleteTableView: UITableView {
     
     /// The max visible rows visible in the autocomplete table before the user has to scroll throught them
-    open var maxVisibleRows = 3 { didSet { invalidateIntrinsicContentSize() } }
+    open var maxVisibleRows = 5 { didSet { invalidateIntrinsicContentSize() } }
     
     open override var intrinsicContentSize: CGSize {
         
