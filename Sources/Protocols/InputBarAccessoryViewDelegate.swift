@@ -63,6 +63,9 @@ public protocol InputBarAccessoryViewDelegate: AnyObject {
 
     /// Reset to Initial State Method
     func resetToInitialState()
+    
+    /// Show Picker Date View
+    func showPickerDateView()
 }
 
 public extension InputBarAccessoryViewDelegate {

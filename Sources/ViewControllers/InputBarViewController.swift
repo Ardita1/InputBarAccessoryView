@@ -85,6 +85,8 @@ open class InputBarViewController: UIViewController, InputBarAccessoryViewDelega
 
     open func resetToInitialState() {}
     
+    open func showPickerDateView() {}
+    
     open func inputBar(_ inputBar: InputBarAccessoryView, didSwipeTextViewWith gesture: UISwipeGestureRecognizer) { }
 }
 

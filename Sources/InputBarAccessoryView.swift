@@ -60,6 +60,9 @@ open class InputBarAccessoryView: UIView {
     //Check if is Private Note or Public Note
     open var isPrivateNote: Bool = false
     
+    //Check if user is going to add a Reminder Note or not.
+    open var isReminderNoteOn: Bool = false
+    
     //Create an array with InputBarButtonItem
     open var allItems: [InputBarButtonItem] = []
     

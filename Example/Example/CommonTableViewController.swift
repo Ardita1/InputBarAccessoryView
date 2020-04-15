@@ -113,6 +113,11 @@ extension CommonTableViewController: InputBarAccessoryViewDelegate {
     func resetToInitialState() {
     }
     
+    
+    func showPickerDateView() {
+        //Conform protocol
+    }
+    
     // MARK: - InputBarAccessoryViewDelegate
     
     func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
