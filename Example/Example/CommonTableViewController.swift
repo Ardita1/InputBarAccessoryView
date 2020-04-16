@@ -118,7 +118,7 @@ extension CommonTableViewController: InputBarAccessoryViewDelegate {
          //Conform protocol
     }
     
-    func showPickerDateView() {
+    func disableButtons() {
         //Conform protocol
     }
     
