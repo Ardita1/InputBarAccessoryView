@@ -66,6 +66,9 @@ public protocol InputBarAccessoryViewDelegate: AnyObject {
     
     /// Show Picker Date View
     func showPickerDateView()
+    
+    /// Diable Buttons
+    func disableButtons()
 }
 
 public extension InputBarAccessoryViewDelegate {

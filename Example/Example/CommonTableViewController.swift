@@ -111,8 +111,12 @@ class CommonTableViewController: UIViewController, UITableViewDataSource, UITabl
 
 extension CommonTableViewController: InputBarAccessoryViewDelegate {
     func resetToInitialState() {
+         //Conform protocol
     }
     
+    func showPickerDateView() {
+         //Conform protocol
+    }
     
     func showPickerDateView() {
         //Conform protocol
